@@ -1,96 +1,79 @@
-# Car Price Predict
+# Car Price Prediction Using Multiple Linear Regression
 
-
-
-\# Car Price Prediction Using Multiple Linear Regression
-
-
-
-\## Project Overview
+## Project Overview
 
 This project predicts the price of a car based on various features such as size, weight, engine performance, and fuel efficiency. It demonstrates an end-to-end workflow of data preprocessing, feature engineering, modeling, and evaluation.
 
+## Dataset
 
+Source: Car Price dataset (CSV format)
 
-\## Dataset
+Features: Numerical and categorical attributes including:
 
-\- Source: Car Price dataset (CSV format)
+Size & Weight: wheelbase, carlength, carwidth, carheight, curbweight
 
-\- Features: Numerical and categorical attributes including:
+Engine & Performance: enginesize, horsepower, boreratio, stroke, compressionratio, peakrpm
 
-&nbsp; - Size \& Weight: wheelbase, carlength, carwidth, carheight, curbweight
+Fuel Efficiency: citympg, highwaympg
 
-&nbsp; - Engine \& Performance: enginesize, horsepower, boreratio, stroke, compressionratio, peakrpm
+Categorical (encoded): fueltype, aspiration, doornumber, carbody, drivewheel, enginelocation, fuelsystem
 
-&nbsp; - Fuel Efficiency: citympg, highwaympg
+## Workflow
 
-&nbsp; - Categorical (encoded): fueltype, aspiration, doornumber, carbody, drivewheel, enginelocation, fuelsystem
+### 1. Exploratory Data Analysis (EDA)
 
+Understanding distributions, relationships, and missing values
 
+### 2. Preprocessing
 
-\## Workflow
+Label Encoding for binary features
 
-1\. \*\*Exploratory Data Analysis (EDA)\*\*
+One-Hot Encoding for nominal categorical features
 
-&nbsp;  - Understanding distributions, relationships, and missing values
+Dropping non-useful columns
 
-2\. \*\*Preprocessing\*\*
+### 3. Feature Selection
 
-&nbsp;  - Label Encoding for binary features
+Selecting features that influence car price significantly
 
-&nbsp;  - One-Hot Encoding for nominal categorical features
+### 4. Modeling
 
-&nbsp;  - Dropping non-useful columns
+Train-test split (80:20)
 
-3\. \*\*Feature Selection\*\*
+Multiple Linear Regression model
 
-&nbsp;  - Selecting features that influence car price significantly
+### 5. Evaluation
 
-4\. \*\*Modeling\*\*
+R² Score and RMSE for model performance
 
-&nbsp;  - Train-test split (80:20)
+Scatter plot of actual vs predicted prices
 
-&nbsp;  - Multiple Linear Regression model
+## Results
 
-5\. \*\*Evaluation\*\*
+R² Score: [0.8177069544523099]
 
-&nbsp;  - R² Score and RMSE for model performance
+RMSE    : [3793.5400345763105]
 
-&nbsp;  - Scatter plot of actual vs predicted prices
+## Conclusion
 
+Features like enginesize, horsepower, curbweight, and car dimensions strongly influence car price.
 
+The model can predict car prices with reasonable accuracy for the given dataset.
 
-\## Results
+## How to Run
 
-\- R² Score: \*\[0.8177069544523099]\*
+1. Clone the repository
 
-\- RMSE: \*\[3793.5400345763105]\*
+2. Open the Jupyter Notebook: `CarPricePredict\_MLR.ipynb`
 
+3. Ensure the dataset is in the `data/` folder
 
-
-\## Conclusion
-
-\- Features like enginesize, horsepower, curbweight, and car dimensions strongly influence car price.
-
-\- The model can predict car prices with reasonable accuracy for the given dataset.
-
-
-
-\## How to Run
-
-1\. Clone the repository
-
-2\. Open the Jupyter Notebook: `CarPricePredict\_MLR.ipynb`
-
-3\. Ensure the dataset is in the `data/` folder
-
-4\. Run the notebook cells step by step
+4. Run the notebook cells step by step
 
 
 
-\## Author
+#### Author
+#### Ajithkumar
 
-\- Ajithkumar
-
-
+Data Science Enthusiast | Healthcare Operations Professional | Python & SQL Learner
 
