@@ -50,10 +50,9 @@ Scatter plot of actual vs predicted prices
 
 ## Results
 
-R² Score: [0.8177069544523099]
+R² Score: **[0.86]**
 
-RMSE    : [3793.5400345763105]
-
+RMSE    : **[3793.54]**
 ## Conclusion
 
 Features like enginesize, horsepower, curbweight, and car dimensions strongly influence car price.
